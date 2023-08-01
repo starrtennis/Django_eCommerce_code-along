@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'category',
-    'account',
+    'accounts',
     'store',
 ]
 
@@ -72,7 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Django_eCommerce.wsgi.application'
 
-AUTH_USER_MODEL = 'account.Account'
+AUTH_USER_MODEL = 'accounts.Account'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
