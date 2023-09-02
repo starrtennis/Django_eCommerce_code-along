@@ -7,7 +7,7 @@
 
 <!-- ============================ COMPONENT 1 ================================= -->
 {% if not cart_items %}
-	<h2>Your shopping cart is empty</h2>
+	<h2 class="text-center">Your shopping cart is empty</h2>
 	<br />
 	<div class="text-center">
 		<a href="{% url 'store' %}" class="btn btn-primary">Continue shopping</a>
@@ -73,16 +73,16 @@
 		<div class="card">
 		<div class="card-body">
 			<dl class="dlist-align">
-			  <dt>Total price:</dt>
+			  <dt>Subtotal:</dt>
 			  <dd class="text-right">${{ total }}</dd>
 			</dl>
 			<dl class="dlist-align">
 			  <dt>Tax:</dt>
-			  <dd class="text-right"> $10.00</dd>
+			  <dd class="text-right">${{ tax }}</dd>
 			</dl>
 			<dl class="dlist-align">
-			  <dt>Total:</dt>
-			  <dd class="text-right text-dark b"><strong>$59.97</strong></dd>
+			  <dt>Grand total:</dt>
+			  <dd class="text-right text-dark b"><strong>${{ grand_total }}</strong></dd>
 			</dl>
 			<hr>
 			<p class="text-center mb-3">
