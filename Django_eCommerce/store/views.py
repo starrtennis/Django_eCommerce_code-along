@@ -54,4 +54,4 @@ def search(request):
         'products': products,
         'product_count': product_count,
     }
-    return render(request, 'store/store.html',)
+    return render(request, 'store/store.html', context)
